@@ -1,0 +1,127 @@
+
+
+/* .contenu-onglet-moteur {
+    font-family: 'Open Sans',sans-serif;
+    
+} */
+
+input[type='text'] {
+    transition: all .10s ease-in-out 0;
+    background: url(../images/icons8-google-web-recherche-64.png) no-repeat  10px center  ;
+    background-color: #d8d8d8;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 16px;
+    border-image: none;
+    border-radius: 9px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 50%) inset, 0 1px 1px rgb(0 0 0 / 20%);
+    color: #2c3034;
+    /* height: 27px; */
+    text-decoration: none;
+    width: 570px;
+    margin-left: 0;
+    border-style: solid;
+    border-width: 0;
+    padding: 6px 20px 6px 32px;
+}
+input[type='submit'] {
+    background: url(../images/icons8-google-web-recherche-64.png) no-repeat  10px center  ;
+    background-color: #ffffff;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 16px;
+    border-image: none;
+    border-radius: 9px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 50%) inset, 0 1px 1px rgb(0 0 0 / 20%);
+    color: #2c3034;
+    /* height: 27px; */
+    text-decoration: none;
+    margin-left: 0;
+    border-style: solid;
+    border-width: 0;
+    padding: 6px 6px 6px 30px;
+}
+/* input {
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    appearance: auto;
+    cursor: text;
+    border-width: 2px;
+    border-style: inset;
+    border-image: initial;
+}  */
+.contenu-onglet-moteur {
+    margin: auto;
+    width: 900px;
+     font-family: 'Open Sans',sans-serif; 
+    font-size: 14px;
+    color: #ffffff;
+    float: right;
+}
+input[type=submit] {
+    margin-left: -0px;
+    margin-bottom: -10px;
+    width: 0;
+    height: 30px;
+    background-color: white;
+    border: 15px;
+    border-color: black;
+    color: #fff;
+    box-shadow: none;
+    cursor: pointer;
+    border-radius: 100px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 50%) inset, 0 1px 1px rgb(0 0 0 / 20%);
+}
+
+/* tableau */
+
+* {
+    font-family: sans-serif; /* Change your font family */
+  }
+  
+  .content-table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    width:500px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .content-table thead tr {
+    background-color: #dad8d2;
+    color: #000000;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  
+  .content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+
+ 

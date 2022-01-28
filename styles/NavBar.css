@@ -1,0 +1,31 @@
+body{
+    margin: auto;
+    padding: auto;
+}
+
+.haut_de_page{
+    padding: 3px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+.container{
+    margin: auto;
+    max-width: 100%;
+    background-color: blueviolet;
+}
+
+.navBar{
+    background-color: black;
+    color: white;
+    max-width: (100%-80px) ;
+}
+
+.droit{
+    background-color: aqua;
+    max-width: (100%-200px);
+}
+.droit, .navBar{
+    display: inline-block;
+}
