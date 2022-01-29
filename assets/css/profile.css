@@ -1,0 +1,207 @@
+.photo_prof img{
+    cursor: pointer;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    float: left;
+    /* margin-left: 40%;
+    margin-top:-1px; */
+    justify-content: center;
+    clip-path: circle();
+}
+
+
+
+
+/*
+** Layout
+***********************************************************/
+
+
+
+.content {
+  flex: 1;
+  padding: 30px;
+  transition: background 0.1s linear;
+  -webkit-transition: background 0.1s linear;
+  -moz-transition: background 0.1s linear;
+  -ms-transition: background 0.1s linear;
+  -o-transition: background 0.1s linear;
+}
+
+.content .title {
+  margin: 0 0 30px;
+  font: 35px Cookie, sans-serif;
+}
+
+
+/*
+** Grid
+***********************************************************/
+.grid {
+  display: flex;
+}
+
+.grid .col {
+  flex: 1;
+  margin: 0 30px 30px 0;
+  padding: 15px;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: inset 0 -1px 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.grid .col:last-child {
+  margin-right: 0;
+}
+
+.grid .col .head {
+  margin: -15px -15px 15px -15px;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/*
+** Tables
+***********************************************************/
+table {
+  width: calc(100% + 28px);
+  border-collapse: collapse;
+  margin: -16px -14px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #eeeeee;
+}
+
+th:first-child,
+td:first-child {
+  border-left: 0;
+}
+
+th:last-child,
+td:last-child {
+  border-right: 0;
+}
+
+th {
+  background: #f8f8f8;
+}
+
+tr:nth-child(odd) {
+  background: #f8f8f8;
+}
+
+/*
+** Buttons
+***********************************************************/
+.btnset {
+  margin: 15px -15px -15px -15px;
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #eeeeee;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 100px;
+  margin-left: 10px;
+  padding: 10px 15px 12px;
+  font: 700 12px/1 'Open Sans', sans-serif;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn.act {
+  color: #fff;
+  background: #59d;
+}
+
+.btn.act:hover {
+  background: #4488cc;
+}
+
+.btn.pri {
+  color: #fff;
+  background: #6b6;
+}
+
+.btn.pri:hover {
+  background: #55aa55;
+}
+
+.btn.sec {
+  color: #999;
+  background: rgb(243, 243, 243);
+}
+
+.btn.sec:hover {
+  background: rgb(226, 226, 226);
+}
+input[type="file"]{
+    font-size: inherit;
+		border:none;
+		background:whitesmoke;
+		font-family:inherit;
+		padding:.4em;
+		flex:1.5;
+  }
+  .form-group{
+    display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+select{
+		background:rgb(255, 255, 255);
+		font-family:inherit;
+        border-style: solid;
+        border-width: 0;
+        padding: 10px 70px 6px 32px;
+        border-radius: 9px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 50%) inset, 0 1px 1px rgb(0 0 0 / 20%);
+        color: #2c3034;
+        float: right;
+    
+  }
+
+ input[type="text"],
+ input[type="password"],
+ input[type="tel"],
+ input[type="email"]{
+    font-size: inherit;
+		background:rgb(255, 255, 255);
+		font-family:inherit;
+        border-style: solid;
+        border-width: 0;
+        padding: 10px 10px 6px 32px;
+        border-radius: 9px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 50%) inset, 0 1px 1px rgb(0 0 0 / 20%);
+        color: #2c3034;
+        float: right;
+    
+  }
+
+
+input[type="submit"],
+input[type="button"]
+{
+    height:30px;
+    width:200px;
+    background:rgb(255, 255, 255);
+    border-radius:10px;
+    color: rgb(0, 0, 0);
+    text-transform:uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    cursor:pointer;
+    
+  }
+

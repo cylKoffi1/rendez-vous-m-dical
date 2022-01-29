@@ -7,7 +7,7 @@
 
 input[type='text'] {
     transition: all .10s ease-in-out 0;
-    background: url(../images/icons8-google-web-recherche-64.png) no-repeat  10px center  ;
+    background: url(../img/images/icons8-google-web-recherche-64.png) no-repeat  10px center  ;
     background-color: #d8d8d8;
     /* font-family: 'Open Sans', sans-serif; */
     font-size: 16px;
@@ -24,7 +24,7 @@ input[type='text'] {
     padding: 6px 20px 6px 32px;
 }
 input[type='submit'] {
-    background: url(../images/icons8-google-web-recherche-64.png) no-repeat  10px center  ;
+    background: url(../img/images/icons8-google-web-recherche-64.png) no-repeat  10px center  ;
     background-color: #ffffff;
     /* font-family: 'Open Sans', sans-serif; */
     font-size: 16px;
@@ -85,7 +85,7 @@ input[type=submit] {
   .content-table {
     border-collapse: collapse;
     font-size: 0.9em;
-    width:500px;
+    width:100%;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);

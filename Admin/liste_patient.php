@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" href="styles/liste_patient.css">
+    <link rel="stylesheet" href="../assets/css/liste_patient.css">
 </head>
 <body>
    <div class="contenu-onglet-moteur">
@@ -10,7 +10,11 @@
             </form>
        </div>
       <div class="flex">
-        <table class="content-table" >
+        
+      </div>
+
+       
+   </div><table class="content-table" >
             <thead>
               <tr>
                 <th>id</th>
@@ -38,10 +42,6 @@
              
             </tbody>
           </table> 
-      </div>
-
-       
-   </div>
 
    
     

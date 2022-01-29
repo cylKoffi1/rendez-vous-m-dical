@@ -7,9 +7,11 @@
   text-decoration: none;
   font-family: 'Josefin Sans', sans-serif;
 }
-
-body{
-   background-color: #f3f5f9;
+body {
+  height: 100%;
+  font: 15px/1 'Open Sans', sans-serif;
+  color: #555;
+  background: #eeeeee;
 }
 
 .wrapper{
