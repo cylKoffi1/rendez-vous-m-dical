@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins";
+
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+  
+}
+
+
+
+
+
+
+
+
+
+.container{
+    max-width: 1100px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    height: 100%;
+    justify-content: space-between;
+}
+
+section#appointment .container .formulaire{
+
+    width:60%;
+}
+
+section#appointment .container .formulaire h3{
+    font-size: 2em;
+    color: #2a2a2a;
+    margin-bottom: 50px;
+    
+}
+
+section#appointment .container .formulaire-image {
+    width: 40%;
+   /* background-color: #1fb3bf;*/
+    height: 100%;
+    border-radius: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+section#appointment .container .formulaire-image img{
+    width: 300px;
+
+}
+section#appointment {
+
+    background-color: #f9f9fb;
+
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    opacity: inherit;
+}
+
+
+section#appointment .container .formulaire .nom-famille,
+section#appointment .container .formulaire .email{
+    width: 42%;
+}
+
+section#appointment .container .formulaire form{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+section#appointment .container .formulaire input:hover{
+   
+    border-bottom: 2px solid #1fb3bf;
+   }
+section#appointment .container .formulaire select,option, input{
+ margin: 10px 0;
+ padding: 10px;
+ border: none;
+ outline: none;
+ border-bottom: 2px solid #e4e4ec;
+ transform: 0.2s; 
+}
+
+section#appointment .container .formulaire input.numb-tel,
+section#appointment .container .formulaire input.date, 
+section#appointment .container .formulaire input.horaire{
+    width: 28%;
+}
+
+section#appointment .container .formulaire button.submit-btn{
+    width: 192px ;
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1fb3bf;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    
+}
+
+
+.table{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.table table{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+tbody{
+    text-align: center;
+    color: black;
+    font-size: 16px;
+
+    
+}
+
+tr{
+    background: #1fb3bf;
+    
+}
+
+tr:hover{
+    background: orange;
+    
+}
+thead th {
+    background: white;
+    font: zise 19px;
+    border-radius: 5px;
+    border:none;
+    padding: 5px;
+}
+
+tr td{
+    background: #2ee0f0;
+    padding:0 px;
+    margin: 50px 50px 50px 50px;
+    border-radius: 5px;
+}

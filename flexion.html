@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styler.css" charset="UTF-8" >
+    <title>flexion</title>
+</head>
+<body class="body">
+
+    <section id="appointment">
+        <div class=" container">
+            <div class="formulaire">
+                <br/>
+                <h3> Prendre un rendez-vous</h3>
+                <form action="" method="">
+                  <input placeholder="Nom de famille" name="nom" type="text" class="nom-famille">
+                  <input placeholder="Adresse email" name="email"   type="email" class="email">
+                  <input placeholder="Numero de contact" name="number" type="number" class="numb-tel">
+                  <input name="date" type="date" required class="date">
+                  
+                  <select placeholder="Entrer l'heur souhaité" name="time" type="text" class="horaire" >
+                    <option>Entrer l'heure souhaité</option>
+                    <?php    
+                        $reponse = $bdd->query("SELECT * FROM categorie ");
+                    ?>
+                    
+                    <?php
+                        while($donner=$reponse->fetch()){
+                            /*echo'<option
+                            Value="'.$donner['libelé_categorie'].'">'.$donner['libelé_categorie'].'<option>';*/
+                    ?>
+                    <option value="<?php echo $donner['id_categorie'];?>"><?php echo $donner['libelé_categorie'];?> </option>
+        
+                   <?php
+                        }
+                   ?>
+                </select>
+
+                <select placeholder="" name="lieu" type="text" class="horaire" >
+                    <option>Choisissez votre ville</option>
+                    <?php    
+                        $reponse = $bdd->query("SELECT * FROM categorie ");
+                    ?>
+                    
+                    <?php
+                        while($donner=$reponse->fetch()){
+                            /*echo'<option
+                            Value="'.$donner['libelé_categorie'].'">'.$donner['libelé_categorie'].'<option>';*/
+                    ?>
+                    <option value="<?php echo $donner['id_categorie'];?>"><?php echo $donner['libelé_categorie'];?> </option>
+        
+                   <?php
+                        }
+                   ?>
+                </select>
+
+                <select placeholder="Choisiser un motif" name="motif" type="text" class="horaire" >
+                    <option> Choisissez un motif</option>
+                    <?php    
+                        $reponse = $bdd->query("SELECT * FROM categorie ");
+                    ?>
+                    
+                    <?php
+                        while($donner=$reponse->fetch()){
+                            /*echo'<option
+                            Value="'.$donner['libelé_categorie'].'">'.$donner['libelé_categorie'].'<option>';*/
+                    ?>
+                    <option value="<?php echo $donner['id_categorie'];?>"><?php echo $donner['libelé_categorie'];?> </option>
+        
+                   <?php
+                        }
+                   ?>
+                </select>
+                  <!-- lorsqu on click sur soumetre un message sera envoyé 
+                    vers le visiteur lui confirment son rendez vous et le nom 
+                    du medecin qui va lui recevoire-->
+                  <button class="submit-btn"> Soumettre </button>
+                
+                
+                </form>
+
+            </div>
+
+              <!--<div>
+                    <section>
+                        <section>
+                            <div class="table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Lundi</th>
+                                            <th>Mardi</th>
+                                            <th>Mercredi</th>
+                                            <th>Jeudi</th>
+                                            <th>Vendredi</th>
+                                            <th>Samedi</th>
+                                            <th>Dimanche</th>
+                                    
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>heure </td>
+                                            <td>heure </td>
+                                            <td>heure </td>
+                                            <td>heure </td>
+                                            <td>heure </td>
+                                            <td>heure </td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>heure </td>
+                                            <td>heure </td>
+                                            <td>heure </td>
+                                            <td>heure </td>
+                                            <td>heure </td>
+                                            <td>heure </td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>heure </td>
+                                            <td>heure </td>
+                                            <td>heure </td>
+                                            <td>heure </td>
+                                            <td>heure </td>
+                                            <td>heure </td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>heure </td>
+                                            <td>heure </td>
+                                            <td>heure </td>
+                                            <td>heure </td>
+                                            <td>heure </td>
+                                            <td>heure </td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </section>
+                </div>-->
+        
+
+            <div class="formulaire-image">
+                <img src="images/image01.jpg" alt="">
+            </div>
+ 
+        </div>
+        
+
+    </section>
+</body>
+</html>
