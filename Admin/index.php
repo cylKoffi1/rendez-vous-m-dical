@@ -16,7 +16,7 @@
             <li><a href="index.php?page=acc"><img src="../assets/img/images/icons8-profile-50.png" alt=""> Profile</a></li>
             <li><a href="index.php?page=list"><img src="../assets/img/images/icone dossier.png" alt=""> Liste des patients</a></li>
             <li><a href="index.php?page=hor"><img src="../assets/img/images/icone consultation.png" alt=""> Horaire</a></li>
-            <li><a href="index.php?page=rdv"><img src="../assets/img/images/icone de rendez-vous.png" alt=""> Rendez-vous</a></li>
+            <li><a href="index.php?page=rdv"><img src="../assets/img/images/icone de rendez-vous.png" alt="">Rendez-vous</a></li>
             <li><a href="index.php?page=dec"><img src="../assets/img/images/icons8-déconnexion-64.png" alt=""> Déconnexion</a></li>
 
         </ul> 
