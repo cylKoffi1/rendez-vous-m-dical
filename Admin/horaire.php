@@ -13,33 +13,33 @@
     <span class="day-view-date" id="day-view-date">MAI 29 2016</span>
     <div class="day-view-content">
       <div class="day-highlight">
-        Tu <span class="day-events" id="day-events">N'as aucun évènement aujourd'hui</span>. &nbsp; <span tabindex="0" onkeyup="if(event.keyCode != 13) return; this.click();" class="day-events-link" id="add-event" data-date>Add a new event?</span>
+        Tu <span class="day-events" id="day-events">aucun évènement aujourd'hui</span>. &nbsp; <span tabindex="0" onkeyup="if(event.keyCode != 13) return; this.click();" class="day-events-link" id="add-event" data-date>Ajouter un évènement ?</span>
       </div>
       <div class="day-add-event" id="add-day-event-box" data-active="false">
         <div class="row">
           <div class="half">
             <label class="add-event-label">
                Nom de l'évènement
-              <input type="text" class="add-event-edit add-event-edit--long" placeholder="New event" id="input-add-event-name">
+              <input type="text" class="add-event-edit add-event-edit--long" placeholder="Evènement" id="input-add-event-name">
              
             </label>
           </div>
           <div class="qtr">
             <label class="add-event-label">
-          Début de l'heure
-              <input type="text" class="add-event-edit" placeholder="8:15" id="input-add-event-start-time" data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
+	Debut de l'heure 
+              <input type="time" class="add-event-edit" placeholder="8:15" id="input-add-event-start-time" data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
               <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-start-ampm" data-options="a,p,am,pm">
             </label>
           </div>
           <div class="qtr">
             <label class="add-event-label">
           Fin de l'heure
-              <input type="text" class="add-event-edit" placeholder="9" id="input-add-event-end-time" data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
+              <input type="time" class="add-event-edit" placeholder="9" id="input-add-event-end-time" data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
               <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-end-ampm" data-options="a,p,am,pm">
             </label>
           </div>
           <div class="half">
-            <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save" class="event-btn--save event-btn">save</a>
+            <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save" class="event-btn--save event-btn">envoi</a>
             <a tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn">retour</a>
           </div>
         </div>
@@ -48,8 +48,8 @@
       <div id="day-events-list" class="day-events-list">
         
       </div>
-      <div class="day-inspiration-quote" id="inspirational-quote">
-        Every child is an artist.  The problem is how to remain an artist once he grows up. –Pablo Picasso
+	  <div class="day-inspiration-quote" id="inspirational-quote">
+		  
       </div>
     </div>
   </div>
@@ -57,20 +57,20 @@
     <div class="cview__month">
       <span class="cview__month-last" id="calendar-month-last">Avr</span>
       <span class="cview__month-current" id="calendar-month">Mai</span>
-      <span class="cview__month-next" id="calendar-month-next">Jui</span>
+      <span class="cview__month-next" id="calendar-month-next">Jun</span>
     </div>
     <div class="cview__header">Dim</div>
     <div class="cview__header">Lun</div>
     <div class="cview__header">Mar</div>
     <div class="cview__header">Mer</div>
-    <div class="cview__header">Jeu</div>
+    <div class="cview__header">jeu</div>
     <div class="cview__header">Ven</div>
     <div class="cview__header">Sam</div>
     <div class="calendar--view" id="dates">
     </div>
   </div>
   <div class="footer">
-    <span><span id="footer-date" class="footer__link">Aujourd'hui est le 30 Mai</span></span>    
+    <span><span id="footer-date" class="footer__link">Aujourd'hui est le 30 MAI</span></span>    
   </div>
 </div>
 <script src="../assets/js/calender.js"></script>

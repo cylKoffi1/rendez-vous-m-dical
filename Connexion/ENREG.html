@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='#'>
+
+</head>
+<body>
+    <div class="regform"><h1>ENREGISTREMENT</h1></div>
+    <div class="main">
+        <form action="">
+
+<!--Nom utilisateur-->
+            <div id="name">
+                <h2 class="name">Utilisateur</h2>
+                <input class="nom" name="nom" type="text"><br>
+                <label class="nomlabel" for="">Nom</label>
+                <input type="text" class="prenom" name="last_name">
+                <label for="" class="prenomlabel"> Prenoms</label>
+            </div>
+<!--date Naissance-->
+            <div id="name">
+                <h2 class="name">Naissance</h2>
+                <input class="date_naiss" name="date_naiss" type="date"><br>
+                <label class="datelabel" for="">Date Naissance</label>
+                <input type="texte" class="lieu_naiss" name="date_naiss">
+                <label for="" class="lieulabel"> Lieu Naissance</label>
+            </div>
+
+<!--Metier-->
+            <h2 class="name">Metier</h2>
+            <input type="text" class="metier" name="metier">
+
+  
+<!--email-->
+            <h2 class="name">Email</h2>
+            <input type="email" class="email" name="email">
+
+<!--telephone-->
+            <h2 class="name">Telephone</h2>
+            <input type="text" class="indicatif" value="+225" disabled='disabled' name="indicatif">
+            <label for="" class="indicatiflab">Indicatif</label>
+            <input type="text" class="numero" name="phone">
+            <label for="" class="numerolab">Numero de telephone</label>
+
+<!--identifianf-->
+<div id="name">
+    <h2 class="name">Identifiant</h2>
+    <input class="nom_utilisateur" name="nom_utilisateur" type="texte"><br>
+    <label class="nomutilisateurlabel" for="">Nom Utilisateur</label>
+    <input type="password" class="mdp" name="mdp">
+    <label for="" class="mdplabel"> Mot De Passe</label>
+</div>
+
+<!--sexe-->
+            <h2 class="name">Sexe</h2>
+            <select name="" id="" class="sexe" name="sexe">
+                    <option value="" disabled="disabled" selected="selected">--choisir option</option>
+                    <option value="">Masculin</option>
+                    <option value="">Femnin</option>
+            </select>
+<!--bouton-->
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url(../header/images/c1.jpg);
+            background-position: center;
+            background-size: cover;
+            font-family: sans-serif;
+            margin-top: 40px;
+        }
+        .regform{
+            width: 800px;
+            background-color: rgb(0, 0, 0,0.6);
+            margin: auto;
+            color: #ffffff;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px 15px 0px 0px;
+        }
+        .main{
+            background-color: rgb(0, 0, 0,0.6);
+            width: 800px;
+            margin: auto;
+        }
+        form{
+            padding: 10px;
+        }
+        #name{
+            width: 100%;
+            height: 100px;
+        }
+        .name{
+            margin-left: 25px;
+            margin-top: 30px;
+            width: 125px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .nom{
+            position: relative;
+            left: 200px;
+            top: -28px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            text-align: center;
+        }
+        .prenom{
+            position: relative;
+            left: 442px;
+            top: -72px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color:#555;
+            text-align: center;
+        }
+        .nomlabel{
+            position: relative;
+            color: #E5E5E5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 203px;
+            top: -42px;
+        }
+        .prenomlabel{
+            position: relative;
+            color: #E5E5E5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 197px;
+            top: -41px;
+        }
+        .date_naiss{
+            position: relative;
+            left: 200px;
+            top: -34px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 32px;
+            text-align: center;
+
+        }
+        .lieu_naiss{
+    position: relative;
+    left: 380px;
+    top: -79px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+
+        }
+        .datelabel{
+            position: relative;
+            color: #E5E5E5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 203px;
+            top: -45px;
+        }
+        .lieulabel{
+            position: relative;
+            color: #E5E5E5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 138px;
+            top: -45px;
+        }
+        .nom_utilisateur{
+            position: relative;
+            left: 200px;
+            top: -26px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            text-align: center;
+
+        }
+        .mdp{
+            position: relative;
+            left: 387px;
+            top: -72px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color:#555;
+            text-align: center;
+
+        }
+        .nomutilisateurlabel{
+            position: relative;
+            color: #E5E5E5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 202px;
+            top: -41px;
+        }
+        .mdplabel{
+            position: relative;
+            color: #E5E5E5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 144px;
+            top: -41px;
+        }
+
+        .metier{
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 480px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color:#555;
+            text-align: center;
+
+        }
+        .email{
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 480px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color:#555;
+            text-align: center;
+
+        }
+        .indicatif{
+            position: relative;
+            left: 200px;
+            top: -35px;
+            line-height: 40px;
+            width: 95px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color:rgb(255, 255, 255);
+            text-align: center;
+
+        }
+        .numero{
+            position: relative;
+            left: 213px;
+            top: -37px;
+            line-height: 40px;
+            width: 255px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color:#555;
+            text-align: center;
+
+        }
+        .indicatiflab{
+            position: relative;
+            color: #E5E5E5;
+            text-transform: capitalize;
+             font-size: 16px;
+             left: 54px;
+             top: -2px;
+        }
+        .numerolab{
+            position: relative;
+            color: #E5E5E5;
+            text-transform: capitalize;
+             font-size: 16px;
+             left: -91px;
+             top: -2px;
+        }
+        .sexe{
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 532px;
+            height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color:#555;
+            outline: none;
+            overflow: hidden;
+            text-align: center;
+        }
+        .sexe option{
+            font-size: 20px;
+
+        }
+       
+       button{
+           background-color: #3BAF9F;
+           display: block;
+           margin: 20px 0px 0px 317px;
+           text-align: center;
+           border-radius: 12px;
+           border: 2px solid #366473;
+           padding: 14px  110px;
+           outline: none;
+           color: white;
+           cursor: pointer;
+           transition: 0.25px;
+       }
+       button:hover{
+           background-color: #5390F5;
+       }
+
+</style>
+</body>
+</html>

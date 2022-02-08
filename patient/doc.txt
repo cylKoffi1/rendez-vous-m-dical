@@ -1,0 +1,16 @@
+margin: 15px;
+    display: grid;
+    grid-gap:5px;
+    grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
+    grid-auto-rows: 100px;
+
+
+    list-style: none;
+    margin: 05px;
+    padding: 10px;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 5px;
+    height: 100%;
+    grid-auto-flow:row;

@@ -1,0 +1,140 @@
+dans la base de donner il arra une table specialité
+
+les specialité:
+    Addictologie
+    Algologie
+    Allergologie
+    Anesthésie-Réanimation
+    Cancérologie
+    Cardio-vasculaire HTA
+    Chirurgie
+    Dermatologie
+    Diabétologie-Endocrinologie
+    Génétique
+    Gériatrie
+    Gynécologie-Obstétrique
+    Hématologie
+    Hépato-gastro-entérologie
+    Imagerie médicale
+    Immunologie
+    Infectiologie
+
+    Médecine du sport
+    Médecine du travail
+    Médecine générale
+    Médecine légale
+    Médecine physique et de réadaptation
+    Néphrologie
+    Neurologie
+    Nutrition
+    Ophtalmologie
+    ORL
+    Pédiatrie
+    Pneumologie
+    Psychiatrie
+    Rhumatologie
+    Sexologie
+    Toxicologie
+    Urologie
+
+
+
+
+    <div class="container">
+
+        <div class="header">
+            
+                <ul class="navig-list">
+                    <li class="navig-img"><img src="images/logo.png" alt="logo"></li>
+                    <li class="navig-item"><a href="#">Accueil</a></li>
+                    <li class="navig-item"><a href="#">.........</a></li>
+                    <li class="navig-item"><a href="#">.........</a></li>
+                    <li class="navig-item"><a href="#">..........</a></li>
+                   
+                    <li class="navig-item"><a href="#">..........</a></li>
+                    <li class="navig-item"><a href="#">..........</a></li>
+                    <li class="navig-item"><a href="#">..........</a></li>
+                    <li class="navig-item"><a href="#"></a></li>
+                    <li class="navig-item">
+                        <input type="search" name="search" class="rech">
+                        <button type="submit" class="bout" name="recherch" >OK</button>
+                    </li>
+        
+                </ul>
+        </div>
+
+        <div class="menu">
+            <div class="mn"> le menu</div>
+        </div>
+
+        <div class=" content">
+            
+                
+                <div class="lab-bloc"><a href="#">Psychiatrie </a></div>
+               
+
+                <div class="lab-bloc"> <a href="#">Pédopsychiatrie</a></div>
+            
+
+            
+                <div class="lab-bloc"> <a href="#">Imagerie médicale</a> </div>
+                
+                
+                <div class="lab-bloc"> <a href="#">Radiothérapie carcinologique</a></div>
+                
+            
+                
+                <div class="lab-bloc"> <a href="#">Réanimation médicale</a></div>
+            
+                
+                <div class="lab-bloc"> <a href="#"><p>Hématologie clinique</p></a></div>
+    
+                
+                <div class="lab-bloc"> <a href="#"></a><p>Endocrinologie</p></div>
+            
+
+            
+                
+                <div class="lab-bloc"> <a href="#"></a><p>Cardiologie</p></div>
+            
+
+                
+                <div class="lab-bloc"> <a href="#"></a><p>Néphrologie,</p></p></div>
+
+            
+                
+                <div class="lab-bloc"> <a href="#"></a><p>Neurologie</p></div>
+                
+            
+                <div class="lab-bloc"> <a href="#">.....</a></div>
+                <div class="lab-bloc"> <a href="#"><p>.........</p></a></div>
+                <div class="lab-bloc"> <a href="#"><p>.........</p></a></div>
+                <div class="lab-bloc"> <a href="#"><p>.........</p></a></div>
+                <div class="lab-bloc"> <a href="#"><p>.........</p></a></div>
+                <div class="lab-bloc"> <a href="#"><p>.........</p></a></div>
+                <div class="lab-bloc"> <a href="#"><p>.........</p></a></div>
+                <div class="lab-bloc"> <a href="#"><p>.........</p></a></div>
+                <div class="lab-bloc"> <a href="#"><p>.........</p></a></div>
+                <div class="lab-bloc"> <a href="#"><p>.........</p></a></div>
+                <div class="lab-bloc"> <a href="#"><p>.........</p></a></div>
+                <div class="lab-bloc"> <a href="#"><p>.........</p></a></div>
+                <div class="lab-bloc"> <a href="#"><p>.........</p></a></div>
+                <div class="lab-bloc"> <a href="#"><p>.........</p></a></div>
+                <div class="lab-bloc"> <a href="#"><p>.........</p></a></div>
+                <div class="lab-bloc"> <a href="#"><p>.........</p></a></div>
+                <div class="lab-bloc"> <a href="#"><p>.........</p></a></div>
+
+
+
+
+
+
+
+                 <a href="#"></a>
+        </div>
+
+        <div class="footer">
+            <div class="foot"> pied</div>
+        </div>
+
+    </div>

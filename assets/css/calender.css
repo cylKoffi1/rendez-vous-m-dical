@@ -2,7 +2,7 @@
 .calendar{
   color: #fff;
   margin: 10px auto;
-  background-image: -o-linear-gradient(45deg,#a692df, #40aeb4 );
+  background: #04b6e2;
   padding: 60px 40px 80px 40px;
   width: 95%;
   max-width: 600px;

@@ -4,9 +4,9 @@ function CalendarApp(date) {
     date = new Date();
   }
   
-  this.days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-  this.months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-  this.quotes = ['Whatever the mind of man can conceive and believe, it can achieve. –Napoleon Hill', 'Strive not to be a success, but rather to be of value. –Albert Einstein', 'Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference.  –Robert Frost', 'I attribute my success to this: I never gave or took any excuse. –Florence Nightingale', 'You miss 100% of the shots you don’t take. –Wayne Gretzky', 'The most difficult thing is the decision to act, the rest is merely tenacity. –Amelia Earhart', 'Every strike brings me closer to the next home run. –Babe Ruth', 'Definiteness of purpose is the starting point of all achievement. –W. Clement Stone', 'Life isn’t about getting and having, it’s about giving and being. –Kevin Kruse', 'Life is what happens to you while you’re busy making other plans. –John Lennon', 'We become what we think about. –Earl Nightingale', 'Life is 10% what happens to me and 90% of how I react to it. –Charles Swindoll', 'The most common way people give up their power is by thinking they don’t have any. –Alice Walker', 'The mind is everything. What you think you become.  –Buddha', 'Winning isn’t everything, but wanting to win is. –Vince Lombardi', 'Every child is an artist.  The problem is how to remain an artist once he grows up. –Pablo Picasso', ' You can never cross the ocean until you have the courage to lose sight of the shore. –Christopher Columbus', 'I’ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel. –Maya Angelou', 'Either you run the day, or the day runs you. –Jim Rohn', 'Whether you think you can or you think you can’t, you’re right. –Henry Ford', 'The two most important days in your life are the day you are born and the day you find out why. –Mark Twain', 'Whatever you can do, or dream you can, begin it.  Boldness has genius, power and magic in it. –Johann Wolfgang von Goethe', 'The best revenge is massive success. –Frank Sinatra', 'People often say that motivation doesn’t last. Well, neither does bathing.  That’s why we recommend it daily. –Zig Ziglar', 'Life shrinks or expands in proportion to one’s courage. –Anais Nin', 'If you hear a voice within you say “you cannot paint,” then by all means paint and that voice will be silenced. –Vincent Van Gogh', 'There is only one way to avoid criticism: do nothing, say nothing, and be nothing. –Aristotle', 'Ask and it will be given to you; search, and you will find; knock and the door will be opened for you. –Jesus', 'The only person you are destined to become is the person you decide to be. –Ralph Waldo Emerson', 'Go confidently in the direction of your dreams.  Live the life you have imagined. –Henry David Thoreau',  'Few things can help an individual more than to place responsibility on him, and to let him know that you trust him.  –Booker T. Washington'];
+  this.days = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredri', 'Samedi'];
+  this.months = ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Jun', 'Jul', 'Auo', 'Sep', 'Oct', 'Nov', 'Dec'];
+  this.quotes = [];
   this.apts = [
     {
       name: 'Finish this web app',
@@ -61,7 +61,7 @@ function CalendarApp(date) {
   /* Start the app */
   this.showView(date);
   this.addEventListeners();
-  this.todayIsSpan.textContent = "Today is " + this.months[date.getMonth()] + " " + date.getDate();  
+  this.todayIsSpan.textContent = "Aujourd'hui est le " + date.getDate() + " " + this.months[date.getMonth()] ;  
 }
 
 CalendarApp.prototype.addEventListeners = function(){
@@ -175,14 +175,14 @@ CalendarApp.prototype.openDayWindow = function(date){
     _dayTopbarText = "had ";
     this.addDayEventEle.style.display = "none";
   } else {
-     _dayTopbarText = "have ";
+     _dayTopbarText = "a ";
      this.addDayEventEle.style.display = "inline";
   }
   this.addDayEventEle.setAttribute("data-date", day);
   
   var eventsToday = this.showEventsByDay(day);
   if ( !eventsToday ) {
-    _dayTopbarText += "no ";
+    _dayTopbarText += "aucun ";
     var _rand = Math.round(Math.random() * ((this.quotes.length - 1 ) - 0) + 0);
     this.dayInspirationalQuote.textContent = this.quotes[_rand];
   } else {
@@ -197,7 +197,7 @@ CalendarApp.prototype.openDayWindow = function(date){
   this.dayEventsList.appendChild(this.showEventsCreateElesView(eventsToday));
   
   
-  this.dayEventsEle.textContent = _dayTopbarText + "events on " + this.months[day.getMonth()] + " " + day.getDate() + ", " + day.getFullYear();
+  this.dayEventsEle.textContent = _dayTopbarText + "évènement le  " +  day.getDate()+ " " +this.months[day.getMonth()] + ", " + day.getFullYear();
   
   
 };
@@ -214,7 +214,7 @@ CalendarApp.prototype.showEventsCreateElesView = function(events) {
     var li = document.createElement("li");
     li.className = "event-dates";
     // li.innerHtml
-    var html = "<span class='start-time'>" + _start.toLocaleTimeString(navigator.language,{hour: '2-digit', minute:'2-digit'}) + "</span> <small>through</small> ";
+    var html = "<small>De</small> "+"<span class='start-time'>" + _start.toLocaleTimeString(navigator.language,{hour: '2-digit', minute:'2-digit'}) + "</span> <small>à</small> ";
     html += "<span class='end-time'>" + _end.toLocaleTimeString(navigator.language,{hour: '2-digit', minute:'2-digit'}) + ( (_end.getDate() != _start.getDate()) ? ' <small>on ' + _end.toLocaleDateString() + "</small>" : '') +"</span>";
     
 
@@ -225,7 +225,7 @@ CalendarApp.prototype.showEventsCreateElesView = function(events) {
     div.innerHTML = html;
     
     var deleteBtn = document.createElement("span");
-    var deleteText = document.createTextNode("delete");
+    var deleteText = document.createTextNode("supprimer");
     deleteBtn.className = "event-delete";
     deleteBtn.setAttribute("data-idx", idx);
     deleteBtn.appendChild(deleteText);
